@@ -1,0 +1,158 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+/* navbar section 1 started from here */
+.navbar-section-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 120px;
+  background-color: white;
+}
+
+:is(.navbar-section-1) :where(.website-name) {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Unlock", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+:is(.navbar-section-1) :where(.navbar-1-subsection) {
+  display: flex;
+  column-gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.search-container {
+  position: relative;
+}
+:where(.search-container) > input {
+  position: relative;
+  padding: 8px 0px 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 630px;
+  width: 630px;
+  height: 28px;
+  outline: none;
+}
+
+:where(.search-container) > select {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  height: 100%;
+  width: 120px;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+:where(.search-container) > button {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  padding: 8px 10px;
+  background-color: #0088dd;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+:where(.search-container) > select:valid {
+  outline: none;
+}
+:where(.search-container) > select:-ms-expand {
+  display: none;
+}
+
+:where(.search-container) > select:after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  outline: none;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+:is(.nav-icon-container) {
+  display: flex;
+  column-gap: 28px;
+}
+:is(.nav-icon-container) :where(.icon-heart) {
+  font-size: 25px;
+  cursor: pointer;
+  color: black;
+}
+:is(.nav-icon-container) :where(img) {
+  width: 25px;
+  height: 25px;
+  transform: rotate(270deg);
+  cursor: pointer;
+  color: black;
+}
+:is(.nav-icon-container) :where(.cart-container, .icon-cart) {
+  position: relative;
+  font-size: 25px;
+  cursor: pointer;
+  color: black;
+}
+:is(.nav-icon-container, .cart-container) :where(.total-cart-items) {
+  position: absolute;
+  right: -13px;
+  top: -7px;
+  font-size: 16px;
+  color: white !important;
+  background: #0088dd;
+  padding: 2px 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+}
+:is(.nav-icon-container) :where(.icon-refresh) {
+  transform: scaleX(-1);
+}
+
+:is(.user-container) {
+  display: flex;
+  column-gap: 28px;
+}
+:is(.user-container) :where(.account-text) {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:is(.user-container) :where(.user-amount) {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:is(.user-container) :where(.user-icon) {
+  font-size: 25px;
+  cursor: pointer;
+  color: #007bff;
+}
+/* navbar section 1 ended here */
+/* navbar section 2 started from here */
+:is(.navbar) :where(.navbar-section-2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 120px;
+  border-radius: 5px;
+  background: #007bff;
+  height: 60px;
+}
