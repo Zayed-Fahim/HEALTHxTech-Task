@@ -1,0 +1,11 @@
+.banner-container {
+  display: flex;
+  gap: 30px;
+  margin: 15px 120px 20px 120px;
+}
+.banner {
+  flex: 1;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: white;
+}

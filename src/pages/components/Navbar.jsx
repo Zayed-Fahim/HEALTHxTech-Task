@@ -6,6 +6,7 @@ import { MdAddShoppingCart } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import RefreshIcon from "../../assets/icon/refresh.png";
 import "../css/navbar.css";
+import NavbarDropdown from "../smallComponents/NavbarDropdown";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -43,7 +44,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="navbar-section-2"></div>
+      <div className="navbar-section-2">
+        <NavbarDropdown />
+      </div>
     </div>
   );
 };
