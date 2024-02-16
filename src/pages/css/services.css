@@ -1,0 +1,30 @@
+.services-container {
+  width: 400px !important;
+  height: fit-content;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.service-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.service-card:last-child {
+  border: none;
+}
+.service-card .icon {
+  font-size: 32px;
+  color: #0389dd;
+}
+.service-card h1 {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.service-card p {
+  font-size: 14px;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -5,7 +5,58 @@
 }
 .banner {
   flex: 1;
-  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  background-color: #eff9ff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 50px;
   border-radius: 8px;
-  background-color: white;
+}
+
+.banner-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.banner-text-container p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.banner-text-container p span {
+  font-size: 28px;
+  color: #0389dd;
+  font-weight: 600;
+}
+.banner-text-container h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 130%;
+}
+.banner-text-container h1 span {
+  color: #0389dd;
+}
+.banner-text-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  padding: 16px 0;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.banner-text-container button:hover {
+  background-color: rgb(59 130 246);
+}
+.banner-img img {
+  position: absolute;
+  right: 50px;
+  bottom: -1px;
+  height: 530px;
 }
